@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Validación con Expresiones Regulares</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <form id="formulario">
+      <h2>Formulario con Validación de Expresiones Regulares</h2>
+      
+      <label>Nombre (solo letras):</label>
+      <input type="text" id="nombre" placeholder="Ej. Juan Pérez">
+      <span id="errorNombre"></span>
+      
+      <label>Correo electrónico:</label>
+      <input type="text" id="correo" placeholder="ejemplo@correo.com">
+      <span id="errorCorreo"></span>
+      
+      <label>Teléfono (8 dígitos):</label>
+      <input type="text" id="telefono" placeholder="12345678">
+      <span id="errorTelefono"></span>
+      
+      <label>Contraseña (mín. 8 caracteres, 1 mayúscula, 1 número):</label>
+      <input type="password" id="password">
+      <span id="errorPassword"></span>
+      
+      <button type="button" onclick="validar()">Registrar</button>
+    </form>
+  </div>
+
+  <script src="js/spc.js"></script>
+</body>
+</html>
